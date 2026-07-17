@@ -1,0 +1,26 @@
+[
+  {
+    "id": "edu-btech",
+    "degree": "B.Tech in Mechanical Engineering",
+    "institution": "MIT Academy of Engineering",
+    "logo": "assets/images/companies/mit-aoe-logo.png",
+    "duration": "2020 - 2024",
+    "type": "education"
+  },
+  {
+    "id": "edu-hssc",
+    "degree": "HSSC (12th)",
+    "institution": "G. B. M. M. Jr. College",
+    "logo": "",
+    "duration": "Completed Feb 2020",
+    "type": "education"
+  },
+  {
+    "id": "edu-ssc",
+    "degree": "SSC (10th)",
+    "institution": "Bharat Vidyalaya",
+    "logo": "",
+    "duration": "Completed Mar 2018",
+    "type": "education"
+  }
+]

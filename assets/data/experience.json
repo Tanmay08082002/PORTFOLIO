@@ -1,0 +1,67 @@
+[
+  {
+    "id": "exp-sakar",
+    "company": "Sakar Robotics",
+    "logo": "assets/images/companies/sakar-robotics-logo.png",
+    "position": "CAD Designer",
+    "location": "Pune, India",
+    "startDate": "2023-08",
+    "endDate": "2023-10",
+    "duration": "Aug 2023 - Oct 2023",
+    "type": "Internship",
+    "responsibilities": [
+      "Created precise 3D CAD models exclusively for autonomous robotic systems used in industrial applications.",
+      "Collaborated with the engineering team to translate functional requirements into manufacturable assemblies.",
+      "Developed part and assembly drawings with GD&T callouts to support in-house fabrication.",
+      "Iterated designs based on functional testing feedback from the robotics integration team."
+    ],
+    "achievements": [
+      "Improved CAD model accuracy that reduced fit-up issues during robot assembly.",
+      "Contributed design updates to 2 active robotic platforms."
+    ],
+    "technologies": ["Fusion 360", "SolidWorks", "GD&T", "Sheet Metal Design"]
+  },
+  {
+    "id": "exp-endurance",
+    "company": "Endurance Technologies Pvt. Ltd.",
+    "logo": "assets/images/companies/endurance-technologies-logo.png",
+    "position": "Robotics & Fettling Supervisor (Intern)",
+    "location": "Aurangabad, India",
+    "startDate": "2023-07",
+    "endDate": "2023-08",
+    "duration": "Jul 2023 - Aug 2023",
+    "type": "Internship",
+    "responsibilities": [
+      "Supervised robotic fettling cells and metal finishing processes on the foundry shop floor.",
+      "Programmed and fine-tuned industrial robot paths for consistent deburring and surface finishing.",
+      "Performed quality inspection of finished castings against dimensional and surface-finish standards.",
+      "Coordinated with production staff to resolve line stoppages and reduce cycle-time losses."
+    ],
+    "achievements": [
+      "Assisted in reducing part rejection rate through improved robot path calibration.",
+      "Documented standard operating procedures for two fettling stations."
+    ],
+    "technologies": ["Industrial Robotics", "Automation", "Manufacturing QA", "Process Documentation"]
+  },
+  {
+    "id": "exp-mitaoe",
+    "company": "MIT Academy of Engineering",
+    "logo": "assets/images/companies/mit-aoe-logo.png",
+    "position": "Student Coordinator & Organizer",
+    "location": "Alandi, Pune",
+    "startDate": "2022-06",
+    "endDate": "2022-09",
+    "duration": "Jun 2022 - Sep 2022",
+    "type": "Leadership / Volunteer",
+    "responsibilities": [
+      "Coordinated manufacturing logistics for a campus drone-building event.",
+      "Managed hands-on use of CNC machines, 3D printers, and laser cutters for student teams.",
+      "Handled vendor negotiation, scheduling, and on-site issue resolution."
+    ],
+    "achievements": [
+      "Delivered the event on schedule while managing a multi-team manufacturing queue.",
+      "Gained direct shop-floor exposure to CNC, additive manufacturing, and laser cutting workflows."
+    ],
+    "technologies": ["CNC Machining", "3D Printing", "Laser Cutting", "Event & Resource Management"]
+  }
+]

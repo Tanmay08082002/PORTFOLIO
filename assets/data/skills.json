@@ -1,0 +1,28 @@
+[
+  { "category": "CAD & Design", "skill": "Fusion 360", "level": 95, "icon": "fa-solid fa-cube" },
+  { "category": "CAD & Design", "skill": "CATIA", "level": 85, "icon": "fa-solid fa-cube" },
+  { "category": "CAD & Design", "skill": "SolidWorks", "level": 70, "icon": "fa-solid fa-cube" },
+  { "category": "CAD & Design", "skill": "AutoCAD", "level": 65, "icon": "fa-solid fa-drafting-compass" },
+  { "category": "CAD & Design", "skill": "GD&T", "level": 75, "icon": "fa-solid fa-ruler-combined" },
+
+  { "category": "Analysis & Simulation", "skill": "ANSYS Simulation", "level": 70, "icon": "fa-solid fa-wave-square" },
+  { "category": "Analysis & Simulation", "skill": "Tolerance Stack-up", "level": 70, "icon": "fa-solid fa-ruler" },
+  { "category": "Analysis & Simulation", "skill": "DFM / DFA", "level": 68, "icon": "fa-solid fa-industry" },
+  { "category": "Analysis & Simulation", "skill": "MATLAB / Simulink", "level": 65, "icon": "fa-solid fa-chart-line" },
+
+  { "category": "Manufacturing", "skill": "CNC Machining", "level": 72, "icon": "fa-solid fa-gears" },
+  { "category": "Manufacturing", "skill": "Sheet Metal Fabrication", "level": 75, "icon": "fa-solid fa-layer-group" },
+  { "category": "Manufacturing", "skill": "Laser Cutting", "level": 70, "icon": "fa-solid fa-bolt" },
+  { "category": "Manufacturing", "skill": "Welding & Fettling QA", "level": 78, "icon": "fa-solid fa-fire" },
+  { "category": "Manufacturing", "skill": "BOM Management", "level": 72, "icon": "fa-solid fa-list-check" },
+
+  { "category": "Automation & Robotics", "skill": "Robot Path Programming", "level": 68, "icon": "fa-solid fa-robot" },
+  { "category": "Automation & Robotics", "skill": "Sensor Integration", "level": 65, "icon": "fa-solid fa-satellite-dish" },
+  { "category": "Automation & Robotics", "skill": "Process Automation", "level": 70, "icon": "fa-solid fa-diagram-project" },
+
+  { "category": "Programming", "skill": "Python", "level": 95, "icon": "fa-brands fa-python" },
+  { "category": "Programming", "skill": "HTML", "level": 80, "icon": "fa-brands fa-html5" },
+  { "category": "Programming", "skill": "CSS", "level": 65, "icon": "fa-brands fa-css3-alt" },
+  { "category": "Programming", "skill": "JavaScript", "level": 60, "icon": "fa-brands fa-js" },
+  { "category": "Programming", "skill": "VBA", "level": 55, "icon": "fa-solid fa-file-excel" }
+]

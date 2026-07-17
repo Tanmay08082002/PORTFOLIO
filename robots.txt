@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tanmay08082002.github.io/Tanmay08082008.github.io/sitemap.xml

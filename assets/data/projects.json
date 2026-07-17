@@ -1,0 +1,78 @@
+[
+  {
+    "id": "proj-firefighting-robot",
+    "name": "Design & Analysis of Autonomous Firefighting Robot",
+    "category": "Robotics",
+    "tags": ["Robotics", "CAD", "Automation", "Research"],
+    "status": "Completed",
+    "completionDate": "2023-12",
+    "duration": "6 months",
+    "shortDescription": "An autonomous robot engineered to navigate buildings independently and extinguish fires using sensor-driven navigation and a mechanically robust chassis.",
+    "problem": "Fire incidents in enclosed structures put first responders at high risk. The team needed a low-cost, autonomous ground robot capable of navigating unpredictable indoor environments and suppressing small fires without human intervention.",
+    "objectives": [
+      "Design a structurally rigid, lightweight chassis capable of carrying a suppression payload.",
+      "Integrate flame, gas, and obstacle sensors into the mechanical layout.",
+      "Develop a navigation and control strategy for autonomous indoor movement.",
+      "Validate structural and thermal performance through simulation before fabrication."
+    ],
+    "engineeringChallenge": "Balancing chassis rigidity against overall robot weight while leaving sufficient volume for the sensor suite, suppression tank, and drivetrain, and ensuring components could tolerate elevated near-fire temperatures.",
+    "solution": "Modeled the full chassis and drivetrain assembly in CAD, ran structural and thermal simulations to validate material choices, and iterated the sensor-mounting geometry to minimize blind spots while keeping the center of gravity low for stability.",
+    "cad": "Full 3D assembly modeled with exploded views for the chassis, drivetrain, and sensor mounts; GD&T applied to critical mating features.",
+    "manufacturing": "Prototype frame fabricated using laser-cut sheet metal panels and 3D-printed sensor brackets, assembled and tested on a benchtop rig.",
+    "results": [
+      "Delivered a working prototype capable of autonomous indoor navigation.",
+      "Validated chassis structural integrity via simulation prior to fabrication, avoiding a costly redesign cycle.",
+      "Strengthened team understanding of automation, robotics integration, and fire-safety system design."
+    ],
+    "skills": ["3D Modeling", "Structural Simulation", "Sensor Integration", "Navigation Algorithms", "Project Management"],
+    "software": ["Fusion 360", "ANSYS", "Python"],
+    "images": [],
+    "gallery": [],
+    "downloads": {
+      "pdf": "",
+      "model3d": "",
+      "video": ""
+    },
+    "links": {
+      "repo": "",
+      "demo": ""
+    }
+  },
+  {
+    "id": "proj-jarvis-assistant",
+    "name": "JARVIS Voice-Controlled Machine Assistant",
+    "category": "Automation",
+    "tags": ["Automation", "Programming", "Manufacturing"],
+    "status": "Completed",
+    "completionDate": "2023-05",
+    "duration": "3 months",
+    "shortDescription": "A voice-activated virtual assistant coupled to specific shop equipment (drilling, cutting) that launches machine operations through spoken commands.",
+    "problem": "Operators frequently needed to run repetitive machine sequences (drilling, cutting) while their hands were occupied, creating workflow friction and safety risk at the point of operation.",
+    "objectives": [
+      "Build a voice-recognition front end that maps spoken keywords to specific machine routines.",
+      "Write the control logic and query set required to run the target equipment reliably.",
+      "Ensure the system fails safely if a command is misheard or ambiguous."
+    ],
+    "engineeringChallenge": "Reliably mapping natural speech input to discrete machine-control commands while preventing accidental triggering of hazardous equipment.",
+    "solution": "Built a Python-based voice assistant that listens for a defined vocabulary of trigger phrases, matches them against a query set, and executes the corresponding machine routine, with explicit fallback behavior for unrecognized input.",
+    "cad": "",
+    "manufacturing": "Tested against a benchtop drilling/cutting setup to validate command-to-action reliability.",
+    "results": [
+      "Successfully triggered target machine routines from voice commands in test conditions.",
+      "Demonstrated a low-cost path to hands-free machine control for repetitive shop tasks."
+    ],
+    "skills": ["Programming", "Automation Logic", "Human-Machine Interface Design"],
+    "software": ["Python"],
+    "images": [],
+    "gallery": [],
+    "downloads": {
+      "pdf": "",
+      "model3d": "",
+      "video": ""
+    },
+    "links": {
+      "repo": "",
+      "demo": ""
+    }
+  }
+]

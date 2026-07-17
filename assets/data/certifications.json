@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cert-modeling-design",
+    "title": "Modeling and Design for Mechanical Engineers",
+    "provider": "Autodesk Design Academy",
+    "date": "2021-06-25",
+    "credentialId": "",
+    "verificationUrl": "https://drive.google.com/file/d/1jmEvrA0WM9ipNdH27Z8g8ZJH9riV7Hio/view?usp=drive_link",
+    "image": "assets/images/certificates/cert-modeling-design.jpg"
+  },
+  {
+    "id": "cert-3d-modeling-manufacturing",
+    "title": "Introduction to 3D Modeling for Manufacturing",
+    "provider": "Autodesk Design Academy",
+    "date": "2021-06-25",
+    "credentialId": "",
+    "verificationUrl": "assets/images/certificates/cert-3d-modeling-manufacturing.jpg",
+    "image": "assets/images/certificates/cert-3d-modeling-manufacturing.jpg"
+  },
+  {
+    "id": "cert-fusion360",
+    "title": "Fusion 360 for Engineers",
+    "provider": "Autodesk Design Academy",
+    "date": "2021-06-25",
+    "credentialId": "",
+    "verificationUrl": "assets/images/certificates/cert-fusion360.jpg",
+    "image": "assets/images/certificates/cert-fusion360.jpg"
+  },
+  {
+    "id": "cert-simulation-analysis",
+    "title": "Simulation Analysis for Mechanical Engineers",
+    "provider": "Autodesk Design Academy",
+    "date": "2021-10-17",
+    "credentialId": "",
+    "verificationUrl": "https://drive.google.com/file/d/1BagRbIOGgrGvIYQujvI--RvvfOjaz5gb/view?usp=drive_link",
+    "image": "assets/images/certificates/cert-simulation-analysis.jpg"
+  },
+  {
+    "id": "cert-hydraulics",
+    "title": "The Complete Hydraulic Course",
+    "provider": "Udemy",
+    "date": "2022-09-13",
+    "credentialId": "UC-0eda205c-4a36-4917-ab65-4d252b631fc1",
+    "verificationUrl": "assets/images/certificates/cert-hydraulics.jpg",
+    "image": "assets/images/certificates/cert-hydraulics.jpg"
+  },
+  {
+    "id": "cert-matlab-onramp",
+    "title": "MATLAB Onramp",
+    "provider": "MathWorks Training Services",
+    "date": "2021-10-14",
+    "credentialId": "",
+    "verificationUrl": "assets/images/certificates/cert-matlab-onramp.jpg",
+    "image": "assets/images/certificates/cert-matlab-onramp.jpg"
+  },
+  {
+    "id": "cert-simscape-onramp",
+    "title": "Simscape Onramp",
+    "provider": "MathWorks Training Services",
+    "date": "2023-02-18",
+    "credentialId": "",
+    "verificationUrl": "assets/images/certificates/cert-simscape-onramp.jpg",
+    "image": "assets/images/certificates/cert-simscape-onramp.jpg"
+  },
+  {
+    "id": "cert-simulink-onramp",
+    "title": "Simulink Onramp",
+    "provider": "MathWorks Training Services",
+    "date": "2023-02-14",
+    "credentialId": "",
+    "verificationUrl": "assets/images/certificates/cert-simulink-onramp.jpg",
+    "image": "assets/images/certificates/cert-simulink-onramp.jpg"
+  }
+]
