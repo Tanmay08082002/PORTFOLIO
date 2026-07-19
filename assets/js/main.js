@@ -1,13 +1,18 @@
 /* =========================================================
    main.js
    Global site behavior: nav, header scroll, resume tabs,
-   contact form validation, back-to-top, AOS init
+   contact form validation + EmailJS, back-to-top, AOS init
    ========================================================= */
 
 (function () {
   'use strict';
 
   document.addEventListener('DOMContentLoaded', () => {
+
+    /* ---------- EmailJS init ---------- */
+    if (window.emailjs) {
+      emailjs.init("Jl2lwoca1Vs9oxT_r"); // 🔑 Replace with your EmailJS Public Key
+    }
 
     /* ---------- AOS init ---------- */
     if (window.AOS) {
@@ -77,14 +82,14 @@
       });
     });
 
-    /* ---------- Contact form validation (client-side, mailto fallback) ---------- */
+    /* ---------- Contact form — EmailJS ---------- */
     const form = document.getElementById('contact-form');
     if (form) {
       const fields = {
-        name: { el: document.getElementById('cf-name'), validate: (v) => v.trim().length >= 2, msg: 'Please enter your name (min 2 characters).' },
-        email: { el: document.getElementById('cf-email'), validate: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()), msg: 'Please enter a valid email address.' },
-        subject: { el: document.getElementById('cf-subject'), validate: (v) => v.trim().length >= 3, msg: 'Please enter a subject (min 3 characters).' },
-        message: { el: document.getElementById('cf-message'), validate: (v) => v.trim().length >= 10, msg: 'Message should be at least 10 characters.' }
+        name:    { el: document.getElementById('cf-name'),    validate: (v) => v.trim().length >= 2,                            msg: 'Please enter your name (min 2 characters).'  },
+        email:   { el: document.getElementById('cf-email'),   validate: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()),    msg: 'Please enter a valid email address.'          },
+        subject: { el: document.getElementById('cf-subject'), validate: (v) => v.trim().length >= 3,                            msg: 'Please enter a subject (min 3 characters).'  },
+        message: { el: document.getElementById('cf-message'), validate: (v) => v.trim().length >= 10,                           msg: 'Message should be at least 10 characters.'   }
       };
 
       function showError(key, show) {
@@ -94,47 +99,67 @@
         if (errEl) errEl.textContent = show ? field.msg : '';
       }
 
-      Object.keys(fields).forEach((key) => {
-        fields[key].el.addEventListener('blur', () => {
-          const valid = fields[key].validate(fields[key].el.value);
-          showError(key, !valid);
-        });
-      });
-
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // Honeypot spam check
-        const honeypot = document.getElementById('cf-honeypot');
-        if (honeypot && honeypot.value.trim() !== '') {
-          return; // silently drop — likely a bot
-        }
-
+      function validateAll() {
         let allValid = true;
         Object.keys(fields).forEach((key) => {
           const valid = fields[key].validate(fields[key].el.value);
           showError(key, !valid);
           if (!valid) allValid = false;
         });
+        return allValid;
+      }
 
-        if (!allValid) return;
+      // Live validation on blur
+      Object.keys(fields).forEach((key) => {
+        fields[key].el.addEventListener('blur', () => {
+          showError(key, !fields[key].validate(fields[key].el.value));
+        });
+      });
 
-        const name = encodeURIComponent(document.getElementById('cf-name').value.trim());
-        const phone = encodeURIComponent(document.getElementById('cf-phone').value.trim());
-        const email = encodeURIComponent(document.getElementById('cf-email').value.trim());
-        const subject = encodeURIComponent(document.getElementById('cf-subject').value.trim());
-        const message = document.getElementById('cf-message').value.trim();
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-        const body = encodeURIComponent(
-          `Name: ${decodeURIComponent(name)}\nPhone: ${decodeURIComponent(phone) || 'N/A'}\nEmail: ${decodeURIComponent(email)}\n\nMessage:\n${message}`
-        );
+        // Honeypot spam check
+        const honeypot = document.getElementById('cf-honeypot');
+        if (honeypot && honeypot.value.trim() !== '') return;
 
-        const mailto = `mailto:princemude2002@gmail.com?subject=${subject}&body=${body}`;
-        window.location.href = mailto;
+        if (!validateAll()) return;
 
-        const successEl = document.getElementById('form-success');
-        if (successEl) successEl.hidden = false;
-        form.reset();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Sending…</span> <i class="fa-solid fa-spinner fa-spin"></i>';
+
+        const templateParams = {
+          from_name:  document.getElementById('cf-name').value.trim(),
+          from_email: document.getElementById('cf-email').value.trim(),
+          phone:      document.getElementById('cf-phone').value.trim() || 'N/A',
+          subject:    document.getElementById('cf-subject').value.trim(),
+          message:    document.getElementById('cf-message').value.trim(),
+          to_email:   'princemude2002@gmail.com'
+        };
+
+        try {
+          await emailjs.send(
+            "service_gfebucq",   // 🔑 Replace with your EmailJS Service ID
+            "template_zkkmymj",  // 🔑 Replace with your EmailJS Template ID
+            templateParams
+          );
+
+          const successEl = document.getElementById('form-success');
+          if (successEl) {
+            successEl.hidden = false;
+            successEl.innerHTML = '<i class="fa-solid fa-circle-check"></i> Message sent! I\'ll get back to you soon.';
+          }
+          form.reset();
+
+        } catch (error) {
+          console.error('EmailJS error:', error);
+          alert('Failed to send message. Please email me directly at princemude2002@gmail.com');
+
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span>Send Message</span> <i class="fa-solid fa-arrow-right"></i>';
+        }
       });
     }
 
