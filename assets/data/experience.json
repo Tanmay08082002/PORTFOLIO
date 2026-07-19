@@ -2,7 +2,7 @@
   {
     "id": "exp-sos",
     "company": "Spacewood Office Solutions Pvt. Ltd.",
-    "logo": "assets/images/companies/sakar-robotics-logo.png",
+    "logo": "assets/images/companies/SOS.jpg",
     "position": "Mechanical Design Engineer",
     "location": "Nagpur, India",
     "startDate": "2025-07",
@@ -30,7 +30,7 @@
   {
     "id": "exp-kke",
     "company": "KKE Car Wash Private Limited",
-    "logo": "assets/images/companies/sakar-robotics-logo.png",
+    "logo": "assets/images/companies/kke.png",
     "position": "Mechanical Design Engineer",
     "location": "Nagpur, India",
     "startDate": "2024-11",
@@ -56,7 +56,7 @@
   {
     "id": "exp-krishigati",
     "company": "Krishigati Pvt Ltd",
-    "logo": "assets/images/companies/sakar-robotics-logo.png",
+    "logo": "assets/images/companies/krishigati.jpg",
     "position": "Mechanical Design Engineer",
     "location": "Pune, India",
     "startDate": "2024-04",
