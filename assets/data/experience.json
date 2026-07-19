@@ -1,5 +1,79 @@
 [
   {
+    "id": "exp-sos",
+    "company": "Spacewood Office Solutions Pvt. Ltd.",
+    "logo": "assets/images/companies/sakar-robotics-logo.png",
+    "position": "Mechanical Design Engineer",
+    "location": "Nagpur, India",
+    "startDate": "2025-07",
+    "endDate": "Prsent",
+    "duration": "Jul 2025 - Present",
+    "type": "Job",
+    "responsibilities": [
+      "Dealt professionally with issues and complaints, helping develop and implement successful resolutions.",
+      "Flexed with changing demands and requirements to consistently meet objectives.",
+      "Designed and developed modular office furniture systems including workstations, storage units, metal lockers and pedestals using SolidWorks and AutoCAD.",
+      "Prepared detailed manufacturing drawings, BOMs, assembly instructions, and engineering change documentation for production release.",
+      "Coordinated with fabrication, CNC, powder coating, upholstery, and assembly teams to ensure manufacturability and smooth production execution.",
+      "Led prototype development, fitment trials, and product validation activities prior to mass production.",
+      "Implemented value engineering and component standardization initiatives resulting in material and manufacturing cost optimization.",
+      "Followed experienced team members to learn basic and advanced job skills.",
+      "Handled team filing, data entry and recordkeeping.",
+      "Assisted team members with tasks and consistently meet targets.",
+      "Communicated clearly with Login, Projects and Planning teams about current work, issues and needs.",
+    ],
+    "achievements": [
+      "Best Kaizen / Improvement implemented (June 2026)"
+    ],
+    "technologies": ["SolidWorks", "Autocad", "GD&T", "Sheet Metal Design", "Mechanical Drawings", "Manufacturing", "New Product Development"]
+  },
+  {
+    "id": "exp-kke",
+    "company": "KKE Car Wash Private Limited",
+    "logo": "assets/images/companies/sakar-robotics-logo.png",
+    "position": "Mechanical Design Engineer",
+    "location": "Nagpur, India",
+    "startDate": "2024-11",
+    "endDate": "2025-06",
+    "duration": "Nov 2024 - Jun 2024",
+    "type": "Job",
+    "responsibilities": [
+      "Operated equipment following correct procedures and safe practices.",
+      "Collected required materials, tools and supplies to complete work.",
+      "Answered calls promptly and delivered faultless service for diverse needs.",
+      "Designed and developed mechanical assemblies for automatic car wash systems including conveyor mechanisms, brush units, and drying equipment.",
+      "Created 3D CAD models, manufacturing drawings, and BOMs using Fusion 360 and AutoCAD.",
+      "Performed component selection and mechanical calculations for motors, gearboxes, bearings, shafts, and drive systems.",
+      "Coordinated with fabrication, assembly, and installation teams to ensure successful manufacturing and commissioning of car wash equipment.",
+      "Implemented design improvements to enhance machine reliability, reduce maintenance requirements, and optimize production cost.",
+      "Supported troubleshooting and root cause analysis of field failures and recommended corrective design actions."
+    ],
+    "achievements": [
+      "Engineered and optimized automated mechanical systems for car wash equipment, enhancing operational efficiency and reducing maintenance downtime by 20%."
+    ],
+    "technologies": ["Fusion 360", "SolidWorks", "Autocad", "GD&T", "Sheet Metal Design", "Ansys", "Mechanical Drawings"]
+  },
+  {
+    "id": "exp-krishigati",
+    "company": "Krishigati Pvt Ltd",
+    "logo": "assets/images/companies/sakar-robotics-logo.png",
+    "position": "Mechanical Design Engineer",
+    "location": "Pune, India",
+    "startDate": "2024-04",
+    "endDate": "2024-10",
+    "duration": "Apr 2023 - Oct 2024",
+    "type": "Internship",
+    "responsibilities": [
+      "Agriculture / Dairy / Forestry / Fishing | Research And Development",
+      "Collaborated with the engineering team to translate functional requirements into manufacturable assemblies.",
+      "Developed part and assembly drawings with GD&T callouts to support in-house fabrication."
+    ],
+    "achievements": [
+      "Improved CAD model accuracy that reduced fit-up issues during agricultural machine assembly."
+    ],
+    "technologies": ["Fusion 360", "SolidWorks", "Autocad", "GD&T", "Sheet Metal Design"]
+  },
+  {
     "id": "exp-sakar",
     "company": "Sakar Robotics",
     "logo": "assets/images/companies/sakar-robotics-logo.png",
